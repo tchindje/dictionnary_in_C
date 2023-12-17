@@ -4,8 +4,11 @@
 #include "function.h"
 #include "table_hachage.h"
 
+// global variable to manipulate stream file
+
 void lire_mots_fichier(FILE *fichier, Table_hachage *table)
 {
+
     // Boucle de lecture
     while (!feof(fichier))
     {
@@ -24,19 +27,7 @@ void lire_mots_fichier(FILE *fichier, Table_hachage *table)
         char *signification = strsep(&ligne_copie, "|");
         char *traduction = strsep(&ligne_copie, "|");
 
-        // Allocation d'une nouvelle structure mot
-        struct mot *mot = malloc(sizeof(struct mot));
-
-        // Assignation des valeurs
-        mot->cle = cle;
-        mot->signification = signification;
-        mot->traduction = traduction;
-
-        // printf("---%s---\n", mot->cle);
-        // printf("---%s---\n", mot->signification);
-        // printf("---%s---\n", mot->traduction);
-
-        inserer_mot(table, mot->cle, mot->signification, mot->traduction);
+        inserer_mot(table, cle, signification, traduction);
 
         // Libération de la mémoire de la copie temporaire
         free(ligne_copie);
@@ -57,12 +48,12 @@ void ecrire_mots_fichier(FILE *fichier, Table_hachage *table)
         {
 
             // Écriture du mot dans le fichier
-            fprintf(fichier, "%s|%s|%s\n", element->mot->cle, element->mot->signification, element->mot->traduction);
+            fprintf(fichier, "%s| %s| %s\n", element->mot->cle, element->mot->signification, element->mot->traduction);
             element = element->suivant;
         }
+        fprintf(fichier, "\n");
     }
 
     free(element);
-
     printf("ecriture reussi\n");
 }

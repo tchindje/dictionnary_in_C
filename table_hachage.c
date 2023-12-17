@@ -75,6 +75,7 @@ void supprimer_mot(Table_hachage *table_h, char *cle, DICO_MODE mode)
     }
 
     Element *cur = table_h->table[indice];
+
     Element *prev_cur = cur;
 
     if (strcmp(cur->mot->cle, cle) == 0)
@@ -83,37 +84,49 @@ void supprimer_mot(Table_hachage *table_h, char *cle, DICO_MODE mode)
         {
             //     // supprime uniquement  le champs signification du mot
             cur->mot->signification = "";
+            // strcpy(cur->mot->signification, "");
 
-            if (strcmp(cur->mot->traduction, "") == 0)
-            {
-                // eviter les mots unitiles : mot sans signification et sans traduction
-                table_h->table[indice] = cur->suivant;
-                free(cur->mot);
-                free(cur);
-            }
+            // if (strcmp(cur->mot->traduction, "") == 0)
+            // {
+            //     // eviter les mots unitiles : mot sans signification et sans traduction
+            //     table_h->table[indice] = cur->suivant;
+            //     free(cur->mot);
+            //     free(cur);
+            // }
 
-            printf("tabhah >> suppression du mot '%s' en mode %s reussi.\n", cle, mode == CLASSIC ? "classic" : "tranduction");
-            return;
+            printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
+            // return;
         }
 
         if (mode == TRANSLATE)
         {
             // supprime uniquement  le champs signification du mot
             cur->mot->traduction = "";
+            // strcpy(cur->mot->traduction, "");
 
-            if (strcmp(cur->mot->signification, "") == 0)
-            {
-                table_h->table[indice] = cur->suivant;
-                free(cur->mot);
-                free(cur);
-            }
+            // if (strcmp(cur->mot->signification, "") == 0)
+            // {
+            //     table_h->table[indice] = cur->suivant;
+            //     free(cur->mot);
+            //     free(cur);
+            // }
 
-            printf("tabhah >> suppression du mot '%s' en mode %s reussi.\n", cle, mode == CLASSIC ? "classic" : "tranduction");
+            printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
+            return;
+        }
+        if (mode == MIXTE)
+        {
+
+            table_h->table[indice] = cur->suivant;
+
+            free(cur->mot);
+            free(cur);
+
+            printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
             return;
         }
     }
 
-    cur = cur->suivant;
     while (cur != NULL)
     {
         if (strcmp(cur->mot->cle, cle) == 0)
@@ -125,45 +138,32 @@ void supprimer_mot(Table_hachage *table_h, char *cle, DICO_MODE mode)
                 // strcpy(cur->mot->signification, "");
                 cur->mot->signification = "";
 
-                if (strcmp(cur->mot->traduction, "") == 0)
-                {
-                    if (cur->suivant == NULL)
-                    {
-                        prev_cur->suivant = NULL;
-                    }
-                    else
-                    {
-                        prev_cur->suivant = cur->suivant;
-                    }
-
-                    free(cur->mot);
-                    free(cur);
-                }
-                printf("tabhah >> suppression du mot '%s' en mode %s reussi.\n", cle, mode == CLASSIC ? "classic" : "tranduction");
-                return;
+                printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
+                // return;
             }
 
             if (mode == TRANSLATE)
             {
                 // supprime uniquement le champs signification du mot
-                // strcpy(cur->mot->signification, "");
+                // strcpy(cur->mot->traduction, "");
                 cur->mot->traduction = "";
 
-                if (strcmp(cur->mot->signification, "") == 0)
+                printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
+            }
+
+            if (mode == MIXTE)
+            {
+                if (cur->suivant == NULL)
                 {
-                    if (cur->suivant == NULL)
-                    {
-                        prev_cur->suivant = NULL;
-                    }
-                    else
-                    {
-                        prev_cur->suivant = cur->suivant;
-                    }
-                    free(cur->mot);
-                    free(cur);
+                    prev_cur->suivant = NULL;
                 }
-                printf("tabhah >> suppression du mot '%s' en mode %s reussi.\n", cle, mode == CLASSIC ? "classic" : "tranduction");
-                return;
+                else
+                {
+                    prev_cur->suivant = cur->suivant;
+                }
+                // free(cur->mot);
+                // free(cur);
+                printf("tabhah >> suppression du mot '%s' reussi.\n", cle);
             }
         }
 
@@ -205,7 +205,6 @@ void detruire_table_hachage(Table_hachage *table)
         {
             // Libération de la mémoire du mot actuel
             free(element->mot);
-
             element = element->suivant;
         }
     }

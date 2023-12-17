@@ -5,6 +5,7 @@ typedef enum dico_mode
 {
     CLASSIC,   // Represents a classic dictionary with word definitions.
     TRANSLATE, // Represents a translation dictionary between two languages.
+    MIXTE,
 } DICO_MODE;
 
 typedef struct mot

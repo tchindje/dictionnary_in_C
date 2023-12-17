@@ -177,4 +177,4 @@ voiture| véhicule automobile à quatre roues | car
 wagon| véhicule ferroviaire servant au transport | wagon 
 xylophone| instrument de musique à percussion | xylophone 
 yeux| organe de la vue | eyes 
-zèbre| mammifère herbivore de la famille des chevaux | zebra 
+zèbre| mammifère herbivore de la famille des chevaux | zebra

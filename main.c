@@ -18,6 +18,8 @@ int main()
     // Rechercher un mot dans la table de hachage.
     char cle[10];
 
+    int create_del = 0;
+
     DICO_MODE mode;
     int choix;
 
@@ -54,8 +56,28 @@ int main()
 
             while (result && strcmp(result->mot->cle, cle) == 0)
             {
-                printf("main >> %s : %s \n", result->mot->cle, result->mot->signification);
-                printf("main >> %s en anglais est : %s \n", result->mot->cle, result->mot->traduction);
+                char trad[300];
+                if (strcmp(result->mot->traduction, "") != 0)
+                {
+                    strcpy(trad, result->mot->traduction);
+                }
+                else
+                {
+                    strcpy(trad, "(traduction not found ) ");
+                }
+
+                char sign[300];
+                if (strcmp(result->mot->signification, "") != 0)
+                {
+                    strcpy(sign, result->mot->signification);
+                }
+                else
+                {
+                    strcpy(sign, "( signification not found ) ");
+                }
+
+                printf("main >> %s : %s \n", result->mot->cle, sign);
+                printf("main >> %s en anglais est : %s \n", result->mot->cle, trad);
                 result = result->suivant;
             }
             break;
@@ -83,6 +105,7 @@ int main()
                 }
 
                 printf("main >> %s : %s \n", cle, mo);
+
                 result = result->suivant;
             }
             break;
@@ -125,7 +148,8 @@ int main()
             }
             else
             {
-                char signification[100], traduction[100];
+                create_del = 1;
+                char signification[200], traduction[200];
                 printf("enter le mot a inserrer : ");
                 scanf("%s", cle);
 
@@ -144,6 +168,7 @@ int main()
                 {
                     printf("enter la signification du mot\n");
                     scanf("%s", signification);
+
                     strcpy(traduction, "");
                 }
 
@@ -151,6 +176,8 @@ int main()
                 {
                     printf("enter la traduction du mot\n");
                     scanf("%s", traduction);
+                    printf("\n");
+
                     strcpy(signification, "");
                 }
 
@@ -158,7 +185,6 @@ int main()
                 {
                     printf("enter la signification du mot :");
                     scanf("%s", signification);
-                    printf("\n");
 
                     printf("enter la traduction du mot: ");
                     scanf("%s", traduction);
@@ -179,20 +205,24 @@ int main()
             }
             else
             {
-
+                create_del = 1;
                 printf("enter le mot a supprimer : ");
                 scanf("%s", cle);
 
-                printf("enter le mode (1 - supprimer en mode classic  2 - supprimer traduction) : ");
+                printf("enter le mode (0 - supression  1 - supprimer en mode classic  2 - supprimer traduction) : ");
 
                 int m;
                 scanf("%d", &m);
-                if (m != 1 && m != 2)
+                if (m != 0 && m != 1 && m != 2)
                 {
                     printf("mode  invalide.\n");
                     break;
                 }
-
+                if (m == 0)
+                {
+                    supprimer_mot(&table, cle, MIXTE);
+                    printf("main>> suppression reussi.\n");
+                }
                 if (m == 1)
                 {
                     supprimer_mot(&table, cle, CLASSIC);
@@ -211,12 +241,16 @@ int main()
             // Quitter
             // save table data in the file
 
-            fichier = fopen("dictionnaire.txt", "w");
-
-            ecrire_mots_fichier(fichier, &table);
+            if (create_del == 1)
+            {
+                FILE *fichier1 = fopen("dictionnaire.txt", "w");
+                ecrire_mots_fichier(fichier1, &table);
+                fclose(fichier1);
+            }
 
             // liberer la memoire
             detruire_table_hachage(&table);
+            printf("Bye ...\n");
 
             return 0;
         default:
