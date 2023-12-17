@@ -1,0 +1,180 @@
+air| gaz incolore , inodore , insipide et transparent | air 
+amour| sentiment d'affection intense | love 
+arbre| plante ligneuse à plusieurs branches | tree 
+azur| couleur bleu clair | azure 
+automne| saison entre l'été et l'hiver | autumn 
+aveugle| qui ne voit pas | blind 
+abeille| insecte qui produit du miel | bee 
+abîmer| endommager | damage 
+abondance| grande quantité | abundance 
+bateau| embarcation | boat 
+beau| joli | beautiful 
+bien| bon | good 
+blanc| couleur blanche | white 
+bouche| orifice servant à manger parler  respirer | mouth 
+bras| membre supérieur du corps humain | arm 
+brave| courageux | brave 
+besoin| manque de quelque chose | need 
+beurre| produit laitier obtenu par barattage | butter 
+cahier| livre de format réduit | notebook 
+camarade| personne avec qui on partage une activité | companion 
+car| véhicule à quatre roues | car 
+carte| représentation plane d'une région | map 
+cas| situation | case 
+chat| mammifère domestique | cat 
+chemin| voie de communication | path 
+chose| objet ou  être ou un  événement | thing 
+ciel| atmosphère qui entoure la Terre | sky 
+dame| femme mariée | lady 
+danger| risque | danger 
+dent| pièce dure et blanche qui se trouve dans la bouche | tooth 
+dernier| qui vient après tous les autres | last 
+devoir| obligation | duty 
+dix| nombre naturel qui suit neuf et précède onze | ten 
+doigt| membre terminal du membre supérieur | finger 
+docteur| médecin | doctor 
+dormir| être en état de repos pendant lequel les muscles sont relâchés | sleep 
+eau| liquide incolore  inodore  insipide  transparent | water 
+école| établissement d'enseignement | school 
+éléphant| mammifère herbivore | elephant 
+étoile| corps céleste brillant | star 
+Europe| continent situé à l'ouest de l'Asie | Europe 
+femme| personne de sexe féminin | woman 
+feuille| organe plat et vert des plantes | leaf 
+fleur| organe reproducteur des plantes à fleurs | flower 
+foi| croyance en quelque chose | faith 
+froid| sensation de température basse | cold 
+four| appareil de cuisson | oven 
+frein| dispositif servant à arrêter ou ralentir un véhicule | brake 
+fruit| organe reproducteur des plantes à fleurs | fruit 
+futur| temps qui va venir | future 
+garçon| enfant de sexe masculin | boy 
+gaz| substance qui n'a ni forme ni volume propre | gas 
+glace| mélange de glace et d'eau | ice 
+globe| sphère | globe 
+grand| de grande taille | big 
+grain| petite partie d'une matière solide | grain 
+grand-père| père du père ou de la mère | grandfather 
+gris| couleur entre le blanc et le noir | gray 
+guerre| conflit entre deux ou plusieurs groupes | war 
+habit| vêtement que l'on porte sur le corps | dress 
+habitude| manière de faire ou de penser qui est répétée | habit 
+heureux| qui ressent du bonheur | happy 
+hier| jour X | yesterday 
+homme| être humain de sexe masculin | man 
+hiver| saison la plus froide de l'année | winter 
+histoire| récit d'événements passés | story 
+hôpital| établissement de soins pour les malades | hospital 
+hôtel| établissement qui offre des chambres et des services aux voyageurs ,
+idée| pensée | idea 
+île| portion de terre entourée d'eau | island 
+imagination| faculté de se représenter des choses qui ne sont pas présentes | imagination 
+important| qui a de l'importance | important 
+intelligence| capacité à comprendre | intelligence 
+jardin| terrain planté d'arbres et de fleurs | garden 
+jouer| s'amuser | play 
+joie| sentiment de bonheur et de plaisir | joy 
+jour| période de lumière entre le lever et le coucher du soleil | day 
+jamais| adverbe de négation signifiant 'à aucun moment' | never 
+jambe| membre inférieur du corps humain | leg 
+jardinier| personne qui s'occupe d'un jardin | gardener 
+jaloux| qui éprouve de la jalousie | jealous 
+joli| agréable à regarder | pretty 
+jeu| activité qui permet de s'amuser | game 
+jouer| s'amuser | play 
+jugement| faculté de discerner | judgment 
+justice| principe d'équité | justice 
+kangourou| marsupial herbivore d'Australie | kangaroo 
+kilomètre| unité de longueur | kilometer 
+livre| ouvrage écrit | book 
+langage| système de communication | language 
+lettre| signe d'un alphabet | letter 
+lire| déchiffrer un texte écrit | read 
+loi| règle établie par l'autorité | law 
+loin| à une grande distance | far 
+lumière| rayonnement électromagnétique | light 
+lac| étendue d'eau douce | lake 
+langue| organe musculaire situé dans la bouche | tongue 
+lapin| petit mammifère aux longues oreilles | rabbit 
+lire| déchiffrer un texte écrit | read 
+livre| ouvrage écrit | book 
+loi| règle établie par l'autorité | law 
+loin| à une grande distance | far 
+lune| satellite naturel de la Terre | moon 
+lundi| premier jour de la semaine | monday 
+maison| bâtiment servant à l'habitation | house 
+malade| qui est atteint d'une maladie | sick 
+manger| absorber de la nourriture | eat 
+main| membre supérieur du corps humain | hand 
+marche| manière de se déplacer à pied | walk 
+mari| homme uni à une femme par le mariage | husband 
+mer| grande étendue d'eau salée | sea 
+mère| femme par rapport à ses enfants | mother 
+montagne| grande élévation de terrain | mountain 
+naissance| action de venir au monde | birth 
+nature| l'ensemble des êtres vivants et des choses non fabriquées | nature 
+nécessaire| qui est indispensable | necessary 
+neige| eau gelée tombant du ciel en flocons | snow 
+neurone| cellule nerveuse | neuron 
+neuf| nombre qui suit huit et précède dix | nine 
+nuit| période d'obscurité entre le coucher et le lever du soleil | night 
+numéro| chiffre | number 
+objet| chose | object 
+océan| grande étendue d'eau salée | ocean 
+œil| organe de la vue | eye 
+oiseau| animal ver
+oiseau| animal vertébré à plumes et capable de voler | bird 
+ombre| zone où la lumière ne parvient pas | shadow 
+ordinateur| machine capable de traiter des informations | computer 
+or| métal précieux de couleur jaune | gold 
+oreille| organe de l'ouïe | ear 
+outil| objet servant à effectuer un travail | tool 
+pain| aliment fabriqué à partir de farine de blé et cuit au four | bread 
+pantalon| vêtement qui couvre les jambes du corps | pants 
+papiers| ensemble de documents | papers 
+parc| grand espace vert aménagé | park 
+parle| action de communiquer à l'aide de la voix | speak 
+parrain| personne qui se porte garante d'un autre | godfather 
+parole| faculté de parler | speech 
+passeport| document permettant de voyager à l'étranger | passport 
+patate| plante herbacée dont on mange le tubercule | potato 
+question| demande qui attend une réponse | question 
+radio| appareil permettant d'écouter des émissions | radio 
+rage| sentiment violent et incontrôlable | rage 
+raison| faculté de penser et de juger | reason 
+rapport| lien entre deux ou plusieurs choses | relationship 
+repas| ensemble de plats que l'on mange à un moment donné | meal 
+reine| femme qui règne sur un royaume | queen 
+rire| expression sonore de la joie | laugh 
+rivière| cours d'eau naturel | river 
+route| voie de communication terrestre | road 
+sac| contenant souple permettant de transporter des objets | bag 
+sage| qui possède une grande sagesse | wise 
+salon| pièce principale d'une habitation | living room 
+santé| état physique et mental d'une personne | health 
+savon| produit utilisé pour se laver | soap 
+science| ensemble des connaissances humaines | science 
+seconde| unité de temps | second 
+secret| chose cachée | secret 
+sein| glande mammaire de la femme | breast 
+table| meuble plat horizontal soutenu par des pieds | table 
+taille| hauteur d'une personne | height 
+téléphone| appareil permettant de communiquer à distance | telephone 
+temps| durée  succession d'instants | time 
+terrain| pièce de terre | land 
+tête| partie supérieure du corps qui contient le cerveau | head 
+théâtre| lieu où l'on donne des spectacles | theater 
+travail| activité à laquelle on emploie son temps et ses efforts | work 
+train| véhicule ferroviaire composé de plusieurs wagons | train 
+usine| bâtiment où l'on fabrique des produits | factory 
+université| établissement d'enseignement supérieur | university 
+utile| qui est utile | useful 
+vacances| période de repos pendant laquelle on ne travaille pas | vacation 
+valise| sac rigide dans lequel on met ses affaires pour voyager | suitcase 
+vent| courant d'air | wind 
+verre| matériau transparent et fragile | glass 
+voiture| véhicule automobile à quatre roues | car 
+wagon| véhicule ferroviaire servant au transport | wagon 
+xylophone| instrument de musique à percussion | xylophone 
+yeux| organe de la vue | eyes 
+zèbre| mammifère herbivore de la famille des chevaux | zebra 

@@ -31,5 +31,6 @@ void inserer_mot(Table_hachage *table, char *cle, char *signification, char *tra
 Element *chercher_mot(Table_hachage *table, char *cle);
 void supprimer_mot(Table_hachage *table, char *cle, DICO_MODE mode);
 int hash(char *cle);
+void detruire_table_hachage(Table_hachage *table);
 
 #endif
